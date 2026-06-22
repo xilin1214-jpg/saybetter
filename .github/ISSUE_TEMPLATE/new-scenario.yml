@@ -1,0 +1,32 @@
+name: "New Scenario"
+description: "Propose a new communication scenario for the scenario library"
+title: "[Scenario]: "
+labels: ["scenario", "good first issue"]
+body:
+  - type: input
+    id: scenario-name
+    attributes:
+      label: Scenario Name
+      description: "What is this scenario called?"
+      placeholder: "e.g., 如何拒绝亲戚借钱"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: "When would someone need this scenario?"
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Example Input
+      description: "Give a realistic example of what someone might want to say"
+    validations:
+      required: true
+  - type: textarea
+    id: principles
+    attributes:
+      label: Expression Principles
+      description: "What should the AI focus on when rewriting in this scenario?"

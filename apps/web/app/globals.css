@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: oklch(98% 0.005 80);
+  --color-surface-elevated: oklch(100% 0 0);
+  --color-surface-muted: oklch(95% 0.008 80);
+  --color-ink: oklch(18% 0.02 80);
+  --color-ink-muted: oklch(45% 0.02 80);
+  --color-ink-faint: oklch(65% 0.015 80);
+  --color-accent: oklch(62% 0.18 25);
+  --color-accent-soft: oklch(92% 0.05 25);
+  --color-border: oklch(90% 0.01 80);
+
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --font-display: "Inter", -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+
+  --radius-card: 1rem;
+  --shadow-card: 0 1px 3px oklch(0% 0 0 / 0.04), 0 4px 12px oklch(0% 0 0 / 0.03);
+  --shadow-card-hover: 0 2px 8px oklch(0% 0 0 / 0.06), 0 8px 24px oklch(0% 0 0 / 0.05);
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: oklch(85% 0.12 25);
+  color: var(--color-ink);
+}

@@ -1,0 +1,40 @@
+id: dissatisfaction
+name: Expressing Dissatisfaction
+description: Help users express frustration without turning it into a fight
+icon: "💬"
+common_relationships:
+  - Friend
+  - Colleague
+  - Partner
+  - Family
+  - Roommate
+goals:
+  - Express feeling hurt
+  - Express feeling ignored
+  - Point out unfairness
+  - Ask for behavior change
+  - Respond to passive-aggressive remarks
+tones:
+  - Calm but firm
+  - Gentle but strong
+  - Direct without attacking
+  - High EQ
+principles:
+  - Describe facts, don't judge character
+  - Use "I" statements, not "you" accusations
+  - Say clearly what behavior bothers you
+  - State what you'd like them to do differently
+avoid:
+  - You always do this
+  - You never think about how I feel
+  - I'm so fed up
+  - Who do you think you are
+example:
+  original: Can you stop giving me last-minute notices?
+  relationship: Colleague
+  goal: Ask for behavior change
+  tone: Calm but firm
+  better:
+    - Last-minute notices throw off my schedule. Could you give me a day's notice going forward so I can plan around it?
+    - I understand things come up, but if I could get earlier notice, I'd be able to arrange things better for both of us.
+    - These last-minute requests are hard for me to accommodate. If there's a plan in the works, I'd appreciate hearing about it sooner.

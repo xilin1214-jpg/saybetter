@@ -1,0 +1,92 @@
+{
+  "site": {
+    "title": "SayBetter",
+    "tagline": "把不好说的话，好好说出来。",
+    "taglineZh": "把不好说的话，好好说出来。"
+  },
+  "nav": {
+    "home": "首页",
+    "rewrite": "改写",
+    "scenarios": "场景",
+    "examples": "示例",
+    "about": "关于"
+  },
+  "home": {
+    "heroTitle": "把不好说的话，好好说出来。",
+    "heroSubtitle": "输入你想说的话，SayBetter 帮你改成更清楚、更体面、更有效的表达。",
+    "heroPlaceholder": "输入你想说的话...",
+    "heroCta": "开始改写",
+    "scenariosTitle": "常见场景",
+    "scenariosSubtitle": "选择一个场景快速开始。",
+    "examplesTitle": "看看效果",
+    "examplesSubtitle": "真实对话，改写对比。",
+    "openSourceTitle": "开源共建",
+    "openSourceLine1": "场景库开放贡献。",
+    "openSourceLine2": "你的输入不会被保存。",
+    "openSourceLine3": "支持自部署 + 自选模型。"
+  },
+  "rewrite": {
+    "title": "改写",
+    "originalLabel": "我原本想说",
+    "originalPlaceholder": "输入你想改写的话...",
+    "relationshipLabel": "对方是谁",
+    "goalLabel": "我想达到的目的",
+    "toneLabel": "我想要的语气",
+    "scenarioLabel": "场景",
+    "scenarioAuto": "自动检测",
+    "submit": "改写",
+    "submitting": "改写中...",
+    "resultTitle": "改写版本",
+    "copy": "复制",
+    "copied": "已复制",
+    "shareCard": "生成卡片",
+    "softer": "再温和一点",
+    "firmer": "再坚定一点",
+    "shorter": "再短一点",
+    "notRecommended": "不建议这样说",
+    "whyBetter": "为什么这样改",
+    "regenerate": "重新生成"
+  },
+  "scenarios": {
+    "title": "场景库",
+    "subtitle": "浏览沟通场景，点击即可开始使用。"
+  },
+  "examples": {
+    "title": "示例",
+    "subtitle": "真实场景改写对比，点击可以亲自试试。",
+    "tryIt": "试一试"
+  },
+  "about": {
+    "title": "关于 SayBetter",
+    "description": "SayBetter 帮助你更清楚、更尊重地表达自己。它不帮助操控、骚扰、威胁、欺骗或情绪勒索他人。"
+  },
+  "relationships": {
+    "friend": "朋友",
+    "colleague": "同事",
+    "manager": "领导",
+    "partner": "伴侣",
+    "parent": "父母",
+    "client": "客户",
+    "stranger": "陌生人"
+  },
+  "goals": {
+    "decline": "拒绝",
+    "remind": "催促",
+    "apologize": "道歉",
+    "explain": "解释",
+    "expressDissatisfaction": "表达不满",
+    "makeRequest": "提出请求",
+    "setBoundary": "设立边界"
+  },
+  "tones": {
+    "gentle": "温和但清楚",
+    "firm": "坚定但不冒犯",
+    "brief": "简短直接",
+    "formal": "正式礼貌",
+    "highEQ": "高情商"
+  },
+  "language": {
+    "en": "EN",
+    "zh-CN": "中文"
+  }
+}

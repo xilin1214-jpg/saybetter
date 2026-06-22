@@ -1,0 +1,40 @@
+id: salary-resignation
+name: Salary & Resignation
+description: Help users professionally express their needs at key career moments
+icon: "📋"
+common_relationships:
+  - Direct manager
+  - HR
+  - Recruiter
+  - New company
+goals:
+  - Negotiate a raise
+  - Negotiate starting salary
+  - Resign
+  - Explain reason for leaving
+  - Decline counter offer
+  - Negotiate departure date
+tones:
+  - Professional with evidence
+  - Grateful but firm
+  - Direct and efficient
+  - Tactful with clear boundaries
+principles:
+  - Use data and achievements for salary talks
+  - Don't complain when resigning, stay professional
+  - Give reasonable notice for handover
+  - Don't disclose your next employer
+avoid:
+  - Give me a raise or I quit (threatening)
+  - This place sucks, I'm done (complaining)
+  - I'm leaving next week (irresponsible)
+  - Whatever, I don't care (no stance)
+example:
+  original: I want to resign but don't want to burn bridges.
+  relationship: Direct manager
+  goal: Resign
+  tone: Grateful but firm
+  better:
+    - I wanted to talk to you about something. After careful consideration, I've decided to accept a new opportunity. I'm truly grateful for your guidance and trust during my time here. I'll make sure the handover is thorough.
+    - I'm planning to leave on [date]. This wasn't an easy decision, but it's the right step for my career. I'll organize everything I'm working on to ensure a smooth transition.
+    - Thank you for everything. I've received an opportunity that aligns better with my career goals, and I'd like to discuss my departure. When would be a good time to talk about the handover?

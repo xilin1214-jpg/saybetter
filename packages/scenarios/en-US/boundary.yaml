@@ -1,0 +1,40 @@
+id: boundary
+name: Setting Boundaries
+description: Help users clearly express their limits and boundaries
+icon: "🚧"
+common_relationships:
+  - Friend
+  - Colleague
+  - Partner
+  - Parent
+  - Relative
+goals:
+  - Decline being overcommitted
+  - Decline personal questions
+  - Set communication frequency
+  - Decline unreasonable requests
+  - Protect emotional space
+tones:
+  - Gentle but firm
+  - Clear and unambiguous
+  - Calm, no over-explaining
+  - High EQ
+principles:
+  - Clearly state what your boundary is
+  - You don't need to apologize for boundaries
+  - You don't need to over-explain
+  - If they push, repeat the boundary without arguing
+avoid:
+  - I'd love to help but... (over-explaining)
+  - Do you think that's fair? (invites debate)
+  - Fine, whatever (passive resistance)
+  - Never mind (avoidance)
+example:
+  original: My mom keeps pressuring me to get married and it's annoying.
+  relationship: Parent
+  goal: Set communication frequency
+  tone: Gentle but firm
+  better:
+    - Mom, I know you care about me. But I have my own pace when it comes to relationships. Can we talk about something else?
+    - We've discussed this many times. My answer hasn't changed. If you keep bringing it up, I may not want to continue the conversation.
+    - I understand your concern, but this is something I want to decide for myself. I'm happy to talk about other things whenever you're ready.

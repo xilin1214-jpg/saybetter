@@ -1,0 +1,44 @@
+id: reminder
+name: Following Up
+description: Help users push things forward without being offensive
+icon: "⏰"
+common_relationships:
+  - Colleague
+  - Friend
+  - Manager
+  - Client
+  - Vendor
+  - Family
+goals:
+  - Ask for feedback
+  - Ask for deliverables
+  - Confirm a deadline
+  - Remind about repayment
+  - Follow up on a message
+tones:
+  - Gentle but clear
+  - Firm but respectful
+  - Short and direct
+  - Formal and polite
+  - High EQ
+  - Polite with urgency
+principles:
+  - Be specific about what you need
+  - Give a clear timeline
+  - Don't attack the person
+  - Explain the downstream impact
+  - Give them an actionable next step
+avoid:
+  - Why are you so slow
+  - You always delay
+  - Can you even do this
+  - Why isn't this done yet
+example:
+  original: Why are you so late again?
+  relationship: Colleague
+  goal: Ask for deliverables today
+  tone: Polite with urgency
+  better:
+    - This needs to be finalized today, otherwise it'll impact the downstream timeline. Can you give me a clear answer by EOD?
+    - My next steps depend on this result, so I'd like to confirm — can you give me a definitive answer today?
+    - I know you've got a lot on your plate, but this result is critical for what comes next. Can we align on a conclusion today?

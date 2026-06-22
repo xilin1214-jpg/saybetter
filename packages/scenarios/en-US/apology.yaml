@@ -1,0 +1,41 @@
+id: apology
+name: Apology
+description: Help users express sincere apologies without being overly self-deprecating
+icon: "🙏"
+common_relationships:
+  - Friend
+  - Colleague
+  - Manager
+  - Partner
+  - Client
+  - Parent
+goals:
+  - Apologize for being late
+  - Apologize for forgetting
+  - Apologize for saying something wrong
+  - Apologize for a work mistake
+  - Apologize for hurting someone
+tones:
+  - Sincere
+  - Brief
+  - Formal
+  - Gentle
+principles:
+  - Directly acknowledge the mistake, no excuses
+  - Show you understand the impact on them
+  - Propose a fix or improvement
+  - Don't over-degrade yourself
+avoid:
+  - It wasn't my fault, but... (deflecting)
+  - You've brought this up so many times (impatience)
+  - Is it really that big a deal (dismissing their feelings)
+  - I already apologized, what more do you want (guilt-tripping)
+example:
+  original: I forgot to reply to an important client's message.
+  relationship: Client
+  goal: Apologize for a work mistake
+  tone: Formal
+  better:
+    - I sincerely apologize for the delayed response — that was my oversight. Your matter is important to me, and I'm addressing it now. I'll make sure this doesn't happen again.
+    - Sorry for the late reply — on it now.
+    - Please accept my apologies for the delayed response. This was entirely my oversight, and I am prioritizing it immediately.

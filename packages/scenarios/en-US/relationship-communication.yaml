@@ -1,0 +1,41 @@
+id: relationship-communication
+name: Relationship Communication
+description: Help users express feelings and needs in romantic relationships
+icon: "💕"
+common_relationships:
+  - Boyfriend
+  - Girlfriend
+  - Husband
+  - Wife
+  - Dating
+goals:
+  - Express feeling hurt
+  - Set a boundary
+  - Ask for quality time
+  - Explain emotions
+  - Express needs
+  - Avoid silent treatment
+tones:
+  - Honest without blaming
+  - Vulnerable without attacking
+  - Gentle but clear
+  - Direct without being cold
+principles:
+  - Use "I" for feelings, not "you" for blame
+  - Describe specific behaviors, don't judge character
+  - Say what you need, not what they shouldn't do
+  - Leave space for them to respond
+avoid:
+  - You don't care about me at all (total negation)
+  - You always do this (absolutizing)
+  - Forget it, never mind (passive-aggressive)
+  - Whatever you want (stonewalling)
+example:
+  original: Can you stop looking at your phone all the time?
+  relationship: Partner
+  goal: Ask for quality time
+  tone: Honest without blaming
+  better:
+    - When we're together, I'd love to have more focused time. Could we set aside a "no phones" window?
+    - I know you might be handling things, but sometimes I feel like you're not really here. Could we leave 20 minutes each evening just for us?
+    - I've noticed we've been on our phones a lot when we're together. I'd really like to have proper conversations. When works for you?

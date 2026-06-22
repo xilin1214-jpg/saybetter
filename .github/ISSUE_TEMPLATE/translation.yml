@@ -1,0 +1,29 @@
+name: "Translation"
+description: "Contribute translations for scenarios or UI"
+title: "[Translation]: "
+labels: ["translation", "good first issue"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: What are you translating?
+      options:
+        - Scenario YAML
+        - System prompt
+        - UI strings
+        - Examples
+    validations:
+      required: true
+  - type: input
+    id: language
+    attributes:
+      label: Target Language
+      description: "What language are you translating to?"
+      placeholder: "e.g., Japanese, Korean"
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: "Which files or sections are you translating?"

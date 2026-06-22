@@ -1,0 +1,40 @@
+id: complaint
+name: Customer Complaints
+description: Help users effectively complain in consumer scenarios and get results
+icon: "📞"
+common_relationships:
+  - Customer service
+  - Merchant
+  - Platform
+  - Service provider
+goals:
+  - Complain about product quality
+  - Complain about service attitude
+  - Request refund or exchange
+  - Complain about delivery delay
+  - Complain about incorrect charges
+  - Request compensation
+tones:
+  - Calm and有理有据
+  - Firm without name-calling
+  - Formal with urgency
+  - Brief and direct
+principles:
+  - State the facts: when, what happened, what impact
+  - State your request: refund, exchange, compensation, apology
+  - Don't insult, but be firm
+  - Reference rules or laws when appropriate
+avoid:
+  - You're all scammers (personal attack)
+  - I'll report you to consumer protection (threatening without action)
+  - Forget it (giving up)
+  - Whatever you say (no clear request of your own)
+example:
+  original: Your product quality is terrible, I want a refund!
+  relationship: Customer service
+  goal: Request refund
+  tone: Calm with evidence
+  better:
+    - I purchased your XX product on [date] and found it has YY issues, which don't match the product description. I'm requesting a full refund — how do I proceed?
+    - This product developed issues within a week of use, affecting normal functionality. Under consumer protection law, I'm requesting a return and refund. Please confirm the processing timeline.
+    - Hello, the XX product I purchased has quality issues. Photos and order screenshots are attached. I'd like to have the refund processed within 3 business days.

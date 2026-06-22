@@ -1,112 +1,130 @@
-# SayBetter
+# SayBetter / 好好说话
 
-An open-source "high EQ reply assistant" — helps you rephrase what you want to say into something more tactful, clearer, and less hurtful.
+> 把不好说的话，好好说出来。
+> Say what you mean, without the sting.
 
-## Why?
+**SayBetter** is an open-source communication assistant that rewrites difficult messages into clear, kind, and effective expressions.
 
-Everyone has been in these situations:
-
-- You don't know how to say no
-- You don't know how to follow up without being pushy
-- You don't know how to talk to your boss
-- You don't know how to reply to a blind date
-- You don't know how to explain things to your parents
-- You don't know how to apologize properly
-- You don't know how to set a boundary
-- You don't know how to be firm without being aggressive
-
-The best part: the results are naturally shareable — perfect for screenshots on social media.
-
-## Example
-
-**Input:**
-> A friend wants to borrow money but I don't want to lend it.
-
-**Output:**
-
-**Gentle:**
-> I've got some things coming up financially myself right now, so I won't be able to help with that. I hope you understand — it's not about you, I'm just not in a position to.
-
-**Firm:**
-> I can't lend you money this time. Our relationship is separate from finances, and I prefer to keep it that way.
-
-**Warm EQ:**
-> I can tell this is important to you, and I wish I could help. I can't lend money, but if you want, I'm happy to brainstorm other options together.
-
-## Share Cards
-
-Generate "Instead of → Try saying" cards, perfect for social media:
+## Demo
 
 ```
-Instead of: "Why are you so late again?"
-Try saying: "This is running behind schedule. Can we finalize it today? I need the outcome to plan next steps."
-— SayBetter
+Input: 你怎么又拖到现在？
+Output:
+  ✅ 温和版: 这个事情我们能不能今天先定一下？我这边后续安排需要依赖这个结果。
+  ✅ 坚定版: 这个事项今天需要有个明确结论，不然会影响后续进度。麻烦你今天下班前给我一个反馈。
+  ✅ 高情商版: 我知道你手上事情可能也不少，但这个结果对后面的推进比较关键。我们能不能今天先把结论对齐一下？
+  ❌ 不建议说: "你怎么又这样？" / "为什么每次都这样？"
 ```
+
+## Why SayBetter?
+
+Many people don't lack ideas — they lack the words. SayBetter helps you express yourself more clearly when it matters: declining, following up, apologizing, setting boundaries, pushing back.
+
+## Features
+
+- Rewrite difficult messages into 3-5 better versions
+- Choose relationship, goal, and tone
+- 12 scenario-based prompt library (open for contributions)
+- "Not recommended" expressions with explanations
+- Shareable cards (PNG download)
+- 20 real-world examples
+- OpenAI-compatible (works with DeepSeek, Kimi, Ollama, etc.)
+- i18n: English + 中文
+
+## Scenarios
+
+| Scenario | Description |
+|----------|-------------|
+| ✋ Rejection | Decline requests warmly but clearly |
+| ⏰ Following Up | Push things forward without being offensive |
+| 🙏 Apology | Sincere apologies, not overly self-deprecating |
+| 💬 Expressing Dissatisfaction | Frustration without fighting |
+| 🚧 Setting Boundaries | Express your limits clearly |
+| 👔 Talking to Your Manager | Professional upward communication |
+| 🤝 Talking to Colleagues | Friendly and efficient peer communication |
+| 💕 Relationship Communication | Feelings and needs in romantic relationships |
+| 🏠 Talking to Parents | Explain difficult things to parents |
+| 💰 Money Matters | Awkward money conversations |
+| 📞 Customer Complaints | Effective complaints that get results |
+| 📋 Salary & Resignation | Key career moment communication |
+
+## Quick Start
+
+```bash
+# Clone
+git clone https://github.com/xilin1214-jpg/saybetter.git
+cd saybetter
+
+# Install
+pnpm install
+
+# Set up environment
+cp .env.example .env
+# Edit .env with your API key
+
+# Run
+pnpm dev
+# → http://localhost:3000
+```
+
+## Configure Model Provider
+
+SayBetter works with any OpenAI-compatible API:
+
+```bash
+# OpenAI
+OPENAI_API_KEY=sk-...
+OPENAI_BASE_URL=https://api.openai.com/v1
+MODEL_NAME=gpt-4o
+
+# DeepSeek
+OPENAI_API_KEY=sk-...
+OPENAI_BASE_URL=https://api.deepseek.com/v1
+MODEL_NAME=deepseek-chat
+
+# Ollama (local)
+OPENAI_BASE_URL=http://localhost:11434/v1
+MODEL_NAME=llama3
+```
+
+## Contributing Scenarios
+
+The scenario library is the heart of SayBetter. Adding a new scenario is simple:
+
+1. Create a YAML file in `packages/scenarios/zh-CN/`
+2. Follow the format in existing files
+3. Submit a PR
+
+See [Scenario Contribution Guide](docs/scenario-contribution-guide.md) for details.
 
 ## Project Structure
 
 ```
 saybetter/
-├── scenarios/          # Scenario library — one YAML per scenario, open for PRs
-│   ├── rejection.yaml
-│   ├── apology.yaml
-│   ├── workplace.yaml
-│   ├── dating.yaml
-│   ├── parents.yaml
-│   ├── money.yaml
-│   └── conflict.yaml
-├── prompts/            # System prompt templates
-│   ├── en/             # English (source of truth)
-│   ├── zh-CN/          # 简体中文
-│   ├── hi/             # हिन्दी
-│   ├── es/             # Español
-│   ├── fr/             # Français
-│   ├── ar/             # العربية
-│   ├── bn/             # বাংলা
-│   ├── pt/             # Português
-│   ├── ru/             # Русский
-│   └── id/             # Bahasa Indonesia
-├── translations/       # Translated scenario YAMLs
-│   ├── zh-CN/
-│   ├── hi/
-│   ├── es/
-│   ├── fr/
-│   ├── ar/
-│   ├── bn/
-│   ├── pt/
-│   ├── ru/
-│   └── id/
-├── web/                # Web frontend
-└── extension/          # Browser extension
+├── apps/
+│   └── web/                    # Next.js web app
+├── packages/
+│   ├── core/                   # Shared types, LLM, safety, prompt builder
+│   ├── scenarios/              # Scenario YAML library (open for PRs)
+│   │   ├── zh-CN/             # Chinese scenarios
+│   │   └── en-US/             # English scenarios
+│   └── prompts/               # System prompt templates
+│       ├── en/                # English
+│       └── zh-CN/             # Chinese
+├── examples/                  # Example cases
+└── docs/                      # Documentation
 ```
 
-## Languages
+## Project Principles
 
-SayBetter supports the world's top 10 most spoken languages:
+> SayBetter helps people express themselves better.
+> It does not help with manipulation, harassment, threats, deception, or emotional abuse.
 
-| # | Language | Code |
-|---|----------|------|
-| 1 | English | `en` |
-| 2 | 简体中文 (Chinese) | `zh-CN` |
-| 3 | हिन्दी (Hindi) | `hi` |
-| 4 | Español (Spanish) | `es` |
-| 5 | Français (French) | `fr` |
-| 6 | العربية (Arabic) | `ar` |
-| 7 | বাংলা (Bengali) | `bn` |
-| 8 | Português (Portuguese) | `pt` |
-| 9 | Русский (Russian) | `ru` |
-| 10 | Bahasa Indonesia (Indonesian) | `id` |
+## Privacy
 
-English is the source of truth. All other languages are translations contributed by the community.
-
-## How to Contribute
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide. Quick start:
-
-- **New scenario** → add a YAML in `scenarios/` (English)
-- **Translate a scenario** → add a translated YAML in `translations/<lang>/`
-- **Translate a prompt** → add a `system.md` in `prompts/<lang>/`
-- **Build features** → work in `web/` or `extension/`
+- Your inputs are never stored on our servers
+- If self-hosted, all model requests use your own configuration
+- The public demo is for experience only — avoid entering sensitive information
 
 ## License
 

@@ -1,0 +1,39 @@
+id: parent-communication
+name: Talking to Parents
+description: Help users explain difficult things to their parents
+icon: "🏠"
+common_relationships:
+  - Father
+  - Mother
+  - Both parents
+goals:
+  - Explain career choice
+  - Explain relationship choice
+  - Explain lifestyle
+  - Handle values clash
+  - Decline parents' arrangements
+  - Share bad news
+tones:
+  - Gentle, let them adjust slowly
+  - Firm but loving
+  - Bridge-building
+  - Brief, no over-explaining
+principles:
+  - Acknowledge their care first
+  - Clearly express your thoughts and decisions
+  - Give parents time and space to accept
+  - You don't always need to convince them
+avoid:
+  - You don't understand (shutting down)
+  - It's my business, leave me alone (hurtful)
+  - You just want to control me (combative)
+  - Forget it, never mind (avoiding)
+example:
+  original: I don't want to take the civil service exam, I want to work in tech.
+  relationship: Parents
+  goal: Explain career choice
+  tone: Gentle, let them adjust slowly
+  better:
+    - Mom, Dad, I know you want stability for me, and I get that. But I'd like to try the tech route first — give myself a year or two. If it doesn't work out, I'll reconsider. Okay?
+    - I've thought about this carefully. The civil service path isn't what I want. I understand your concerns, but this is a decision I need to make for myself.
+    - I know you're looking out for me and you're afraid I'll take a wrong turn. But I hope you can trust me. I want to do something I'm genuinely committed to. Let's think together about how to make this work for all of us.

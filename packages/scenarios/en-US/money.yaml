@@ -1,0 +1,40 @@
+id: money
+name: Money Matters
+description: Help users handle awkward money-related conversations
+icon: "💰"
+common_relationships:
+  - Friend
+  - Relative
+  - Colleague
+  - Business partner
+goals:
+  - Decline lending money
+  - Remind about repayment
+  - Ask to borrow money
+  - Discuss splitting bills
+  - Discuss salary
+  - Decline investment requests
+tones:
+  - Polite but clear
+  - Firm and unambiguous
+  - Tactful, saving face
+  - Direct without awkwardness
+principles:
+  - Be clear when talking about money
+  - Lending should have clear repayment terms
+  - Declining to lend doesn't require over-explanation
+  - Reminding about debt is okay, don't feel awkward
+avoid:
+  - Forget it, it's not that much (bitter but pretending to be generous)
+  - You know I don't have money (defensive)
+  - When exactly will you pay me back (too aggressive)
+  - You're really going to计较 this little (shaming)
+example:
+  original: A friend borrowed money and hasn't paid it back. I want to remind them but feel awkward.
+  relationship: Friend
+  goal: Remind about repayment
+  tone: Polite but clear
+  better:
+    - Hey, about the money from last time — whenever you get a chance, could you send it over? I've got some expenses coming up.
+    - The money you borrowed — I need it back by the end of this week. I have things I need to pay for.
+    - Oh hey, that money from last time — you might have forgotten? No worries, just send it whenever you remember.

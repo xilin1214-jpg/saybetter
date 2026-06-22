@@ -1,0 +1,39 @@
+id: colleague-communication
+name: Talking to Colleagues
+description: Help users communicate efficiently and friendly with coworkers
+icon: "🤝"
+common_relationships:
+  - Peer colleague
+  - Cross-department colleague
+  - Distant colleague
+  - Close collaborator
+goals:
+  - Ask for help
+  - Propose collaboration
+  - Give feedback
+  - Decline unreasonable requests
+  - Handle disagreements
+tones:
+  - Friendly and efficient
+  - Professional but warm
+  - Direct and respectful
+  - Casual but not sloppy
+principles:
+  - State the need and timeline clearly
+  - Respect their schedule
+  - Address the issue, not the person
+  - Give specific action items
+avoid:
+  - When exactly can you get this to me (demanding without space)
+  - That's not my problem (shirking)
+  - You don't understand (condescending)
+  - Whatever (dismissive)
+example:
+  original: This requirement doesn't make sense and I don't want to do it.
+  relationship: Peer colleague
+  goal: Decline unreasonable request
+  tone: Friendly and efficient
+  better:
+    - I see where you're coming from, but there are some implementation concerns. I've listed the risks — want to look at them together and see if there's a better approach?
+    - I've evaluated this and the timeline might not work. Could we start with an MVP and iterate from there?
+    - I think this direction has some challenges. I have an alternative idea though — want to spend 15 minutes discussing it?

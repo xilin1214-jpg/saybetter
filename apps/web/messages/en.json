@@ -1,0 +1,92 @@
+{
+  "site": {
+    "title": "SayBetter",
+    "tagline": "Say what you mean, without the sting.",
+    "taglineZh": "把不好说的话，好好说出来。"
+  },
+  "nav": {
+    "home": "Home",
+    "rewrite": "Rewrite",
+    "scenarios": "Scenarios",
+    "examples": "Examples",
+    "about": "About"
+  },
+  "home": {
+    "heroTitle": "Say what you mean, without the sting.",
+    "heroSubtitle": "Type what you want to say. SayBetter rewrites it into something clearer, kinder, and more effective.",
+    "heroPlaceholder": "Type what you want to say...",
+    "heroCta": "Rewrite it",
+    "scenariosTitle": "Common situations",
+    "scenariosSubtitle": "Pick a scenario to get started faster.",
+    "examplesTitle": "See it in action",
+    "examplesSubtitle": "Real messages, rewritten.",
+    "openSourceTitle": "Open source",
+    "openSourceLine1": "Scenario library is open for contributions.",
+    "openSourceLine2": "Your inputs are never stored.",
+    "openSourceLine3": "Self-host with your own model."
+  },
+  "rewrite": {
+    "title": "Rewrite",
+    "originalLabel": "What I want to say",
+    "originalPlaceholder": "Type the message you want to rephrase...",
+    "relationshipLabel": "Who are they",
+    "goalLabel": "What I want to achieve",
+    "toneLabel": "How I want to sound",
+    "scenarioLabel": "Scenario",
+    "scenarioAuto": "Auto-detect",
+    "submit": "Rewrite",
+    "submitting": "Rewriting...",
+    "resultTitle": "Rewritten versions",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "shareCard": "Share card",
+    "softer": "Softer",
+    "firmer": "Firmer",
+    "shorter": "Shorter",
+    "notRecommended": "Avoid saying",
+    "whyBetter": "Why this works better",
+    "regenerate": "Regenerate"
+  },
+  "scenarios": {
+    "title": "Scenarios",
+    "subtitle": "Browse communication scenarios. Click one to get started."
+  },
+  "examples": {
+    "title": "Examples",
+    "subtitle": "Real situations, rewritten. Click to try it yourself.",
+    "tryIt": "Try it"
+  },
+  "about": {
+    "title": "About SayBetter",
+    "description": "SayBetter helps you express yourself more clearly and respectfully. It does not help with manipulation, harassment, threats, deception, or emotional abuse."
+  },
+  "relationships": {
+    "friend": "Friend",
+    "colleague": "Colleague",
+    "manager": "Manager",
+    "partner": "Partner",
+    "parent": "Parent",
+    "client": "Client",
+    "stranger": "Stranger"
+  },
+  "goals": {
+    "decline": "Decline",
+    "remind": "Remind / Follow up",
+    "apologize": "Apologize",
+    "explain": "Explain",
+    "expressDissatisfaction": "Express dissatisfaction",
+    "makeRequest": "Make a request",
+    "setBoundary": "Set a boundary"
+  },
+  "tones": {
+    "gentle": "Gentle but clear",
+    "firm": "Firm but respectful",
+    "brief": "Short and direct",
+    "formal": "Formal and polite",
+    "highEQ": "High EQ"
+  },
+  "language": {
+    "en": "EN",
+    "zh-CN": "中文"
+  }
+}

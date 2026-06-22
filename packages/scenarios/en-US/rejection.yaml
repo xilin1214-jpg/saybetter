@@ -1,0 +1,41 @@
+id: rejection
+name: Rejection
+description: Help users decline requests warmly but clearly
+icon: "✋"
+common_relationships:
+  - Friend
+  - Colleague
+  - Relative
+  - Manager
+  - Stranger
+goals:
+  - Decline lending money
+  - Decline overtime
+  - Decline dinner invitation
+  - Decline helping out
+  - Decline a relative's request
+  - Decline a last-minute plan
+tones:
+  - Gentle but clear
+  - Firm but respectful
+  - Short and direct
+  - High EQ
+principles:
+  - Express understanding or gratitude first
+  - Clearly state the refusal without ambiguity
+  - No need to over-explain
+  - Offer an alternative if willing
+avoid:
+  - Let me check and get back to you (ambiguous stalling)
+  - I don't want to but... (over-apologizing)
+  - Why do you always ask me (blaming the other person)
+  - Fine... (reluctantly agreeing)
+example:
+  original: A friend wants to borrow money but I don't want to lend it.
+  relationship: Friend
+  goal: Decline lending money
+  tone: Gentle but clear
+  better:
+    - I've got some things coming up financially myself, so I won't be able to help with that. I hope you understand.
+    - I can't lend you money this time. Our relationship is separate from finances, and I prefer to keep it that way.
+    - I can tell this is important to you, and I wish I could help. I can't lend money, but if you want, I'm happy to brainstorm other options together.

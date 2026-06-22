@@ -1,0 +1,39 @@
+id: leader-communication
+name: Talking to Your Manager
+description: Help users communicate professionally and effectively with their manager
+icon: "👔"
+common_relationships:
+  - Direct manager
+  - Senior leader
+  - Cross-department leader
+goals:
+  - Ask for a raise
+  - Report excessive workload
+  - Disagree respectfully
+  - Deliver bad news
+  - Request resources
+  - Request transfer or resignation
+tones:
+  - Professional with evidence
+  - Respectful but not submissive
+  - Direct and efficient
+  - Tactful but focused
+principles:
+  - Lead with the conclusion, then explain
+  - Back up with facts and data
+  - Propose solutions, not just problems
+  - Respect their time, be concise
+avoid:
+  - This isn't fair (emotional)
+  - Others don't have this problem (comparing)
+  - I don't want to work here anymore (passive)
+  - Whatever you decide (no initiative)
+example:
+  original: I have too much work and can't finish it.
+  relationship: Direct manager
+  goal: Report excessive workload
+  tone: Professional with evidence
+  better:
+    - I currently have projects A, B, and C on my plate. At this pace, I may not be able to deliver all of them this week. I'd like to discuss priorities — which ones can we adjust the timeline on?
+    - I've mapped out my current workload and it's exceeding expectations. Here's the full list — could we reprioritize, or is there anything that could be delegated?
+    - I want to flag something: the current task load may exceed what one person can reasonably handle. I suggest we spend 10 minutes aligning on priorities so I can focus on what matters most.
