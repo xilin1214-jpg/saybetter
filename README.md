@@ -1,6 +1,11 @@
-# SayBetter / 好好说话
+<div align="center">
 
-> 把不好说的话，好好说出来。
+**English** · [中文](README.zh-CN.md) · [हिन्दी](README.hi.md) · [Español](README.es.md) · [Français](README.fr.md) · [العربية](README.ar.md) · [বাংলা](README.bn.md) · [Português](README.pt.md) · [Русский](README.ru.md) · [Bahasa Indonesia](README.id.md)
+
+</div>
+
+# SayBetter
+
 > Say what you mean, without the sting.
 
 **SayBetter** is an open-source communication assistant that rewrites difficult messages into clear, kind, and effective expressions.
@@ -8,12 +13,15 @@
 ## Demo
 
 ```
-Input: 你怎么又拖到现在？
+Input: Why are you so late again?
+
 Output:
-  ✅ 温和版: 这个事情我们能不能今天先定一下？我这边后续安排需要依赖这个结果。
-  ✅ 坚定版: 这个事项今天需要有个明确结论，不然会影响后续进度。麻烦你今天下班前给我一个反馈。
-  ✅ 高情商版: 我知道你手上事情可能也不少，但这个结果对后面的推进比较关键。我们能不能今天先把结论对齐一下？
-  ❌ 不建议说: "你怎么又这样？" / "为什么每次都这样？"
+  ✅ Gentle:   Could we finalize this today? I need the outcome to plan my next steps.
+  ✅ Firm:     This needs to be finalized today, otherwise it'll impact the timeline.
+               Please give me a clear answer by EOD.
+  ✅ High EQ:  I know you've got a lot on your plate, but this result is critical
+               for what comes next. Can we align on a conclusion today?
+  ❌ Avoid:   "Why are you so slow?" / "You always delay."
 ```
 
 ## Why SayBetter?
@@ -29,7 +37,7 @@ Many people don't lack ideas — they lack the words. SayBetter helps you expres
 - Shareable cards (PNG download)
 - 20 real-world examples
 - OpenAI-compatible (works with DeepSeek, Kimi, Ollama, etc.)
-- i18n: English + 中文
+- 10 languages supported
 
 ## Scenarios
 
@@ -91,7 +99,7 @@ MODEL_NAME=llama3
 
 The scenario library is the heart of SayBetter. Adding a new scenario is simple:
 
-1. Create a YAML file in `packages/scenarios/zh-CN/`
+1. Create a YAML file in `packages/scenarios/zh-CN/` or `packages/scenarios/en-US/`
 2. Follow the format in existing files
 3. Submit a PR
 
