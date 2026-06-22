@@ -1,18 +1,18 @@
-name: 相亲/恋爱
+name: Dating
 slug: dating
-description: 帮用户在相亲或恋爱场景中得体地表达
+description: Help users express themselves appropriately in dating and romantic scenarios
 inputs:
-  - stage              # 阶段（初次聊天/约会后/暧昧期/确定关系）
-  - original_message   # 想说的原话
-  - desired_tone       # 期望的语气
+  - stage              # Relationship stage (first chat/after date/talking stage/in a relationship)
+  - original_message   # What you want to say
+  - desired_tone       # Preferred tone
 outputs:
-  - natural            # 自然版：不做作，像正常人说话
-  - warm               # 温暖版：带点好感但不过分
-  - boundary           # 边界版：想保持距离但不伤人
-  - not_recommended    # 反面教材
+  - natural            # Natural: authentic, not trying too hard
+  - warm               # Warm: shows interest without being over the top
+  - boundary           # Boundary: create distance without hurting them
+  - not_recommended    # What NOT to say
 examples:
-  - input: "我不太想继续了，但不想伤害对方。"
+  - input: "I don't want to continue seeing them, but I don't want to hurt them."
     outputs:
-      natural: "跟你聊天挺开心的，不过我感觉我们可能更适合做朋友。"
-      warm: "这段时间认识你很开心，你人真的很好。不过我想了想，感觉我们在感情方面可能不太合适，不想耽误你。"
-      boundary: "谢谢你的时间，但我认真考虑过了，觉得我们不太合适继续发展。祝你一切顺利。"
+      natural: "I've enjoyed talking with you, but I think we work better as friends."
+      warm: "I've really enjoyed getting to know you — you're genuinely a great person. But I've been thinking, and I don't think we're the right match romantically. I wouldn't want to keep you waiting."
+      boundary: "Thank you for your time. I've thought about it carefully, and I don't think we should continue seeing each other. I wish you all the best."

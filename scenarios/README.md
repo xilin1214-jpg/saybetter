@@ -1,52 +1,50 @@
-# 场景库
+name: Scenario Library
+description: Each scenario is a YAML file defining how the SayBetter assistant behaves in a specific situation.
 
-每个场景是一个 YAML 文件，定义了"高情商回复助手"在一个特定场景下的行为。
-
-## 场景格式
+## Format
 
 ```yaml
-name: 场景名称
-slug: 英文标识
-description: 一句话描述这个场景
+name: Scenario Name
+slug: english-identifier
+description: One-line description
 inputs:
-  - 输入字段1
-  - 输入字段2
+  - field1
+  - field2
 outputs:
-  - gentle     # 每个场景的输出风格不同，按场景定义
-  - firm
-  - warm
-  - not_recommended
+  - style1           # Description of this output style
+  - style2
+  - style3
+  - not_recommended  # What NOT to say (avoid this)
 examples:
-  - input: "用户输入示例"
+  - input: "Example user input"
     outputs:
-      gentle: "温和版回复"
-      firm: "坚定版回复"
-      warm: "高情商版回复"
+      style1: "Example output in this style"
+      style2: "Example output in this style"
 ```
 
-## 已有场景
+## Available Scenarios
 
-| 文件 | 场景 |
-|------|------|
-| rejection.yaml | 拒绝请求 |
-| apology.yaml | 道歉 |
-| workplace.yaml | 职场沟通 |
-| dating.yaml | 相亲/恋爱 |
-| parents.yaml | 与父母沟通 |
-| money.yaml | 金钱相关 |
-| conflict.yaml | 冲突处理 |
+| File | Scenario |
+|------|----------|
+| rejection.yaml | Declining requests |
+| apology.yaml | Apologizing |
+| workplace.yaml | Workplace communication |
+| dating.yaml | Dating and relationships |
+| parents.yaml | Talking to parents |
+| money.yaml | Money matters |
+| conflict.yaml | Conflict resolution |
 
-## 如何贡献新场景
+## Contributing New Scenarios
 
-1. Fork 本仓库
-2. 在 `scenarios/` 下新建 YAML 文件，参考已有格式
-3. 提交 PR，说明场景用途
+1. Fork this repo
+2. Create a new YAML file in `scenarios/` following the format above
+3. Submit a PR explaining the scenario's use case
 
-欢迎的场景举例：
-- 如何催甲方
-- 如何拒绝亲戚借钱
-- 如何跟领导提加薪
-- 如何体面分手
-- 如何回复阴阳怪气
-- 如何跟邻居沟通噪音问题
-- 如何拒绝无效社交
+Great scenario ideas:
+- Following up with a client
+- Declining a relative's loan request
+- Asking your manager for a raise
+- Breaking up respectfully
+- Responding to passive-aggressive remarks
+- Talking to a neighbor about noise
+- Declining social invitations

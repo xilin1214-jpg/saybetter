@@ -1,18 +1,18 @@
-name: 金钱相关
+name: Money Matters
 slug: money
-description: 帮用户处理与钱有关的尴尬场景
+description: Help users handle awkward money-related conversations
 inputs:
-  - scenario           # 场景（借钱/催债/AA/谈薪/砍价）
-  - relationship       # 和对方的关系
-  - original_message   # 想说的原话
+  - scenario           # Scenario (lending/borrowing/splitting bill/salary negotiation/bargaining)
+  - relationship       # Relationship to the other person
+  - original_message   # What you want to say
 outputs:
-  - polite             # 礼貌版
-  - firm               # 坚定版
-  - tactful            # 圆滑版
-  - not_recommended    # 反面教材
+  - polite             # Polite: courteous and low-pressure
+  - firm               # Firm: clear and direct about the money
+  - tactful            # Tactful: smooth, saves face for both sides
+  - not_recommended    # What NOT to say
 examples:
-  - input: "朋友借了钱一直没还，我想催但又不好意思。"
+  - input: "A friend borrowed money and hasn't paid it back. I want to remind them but feel awkward."
     outputs:
-      polite: "上次借你的那笔钱，方便的话这几天转我一下？我最近也有一些开支要安排。"
-      firm: "上次借你的钱，麻烦这周内还我一下。我这边需要用。"
-      tactful: "对了，上次那个钱的事，你是不是忘了？没事，想起来转我就行。"
+      polite: "Hey, about the money from last time — whenever you get a chance, could you send it over? I've got some expenses coming up."
+      firm: "The money you borrowed — I need it back by the end of this week. I have things I need to pay for."
+      tactful: "Oh hey, that money from last time — you might have forgotten? No worries, just send it whenever you remember."

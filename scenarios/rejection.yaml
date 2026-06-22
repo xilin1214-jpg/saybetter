@@ -1,18 +1,18 @@
-name: 拒绝请求
+name: Rejection
 slug: rejection
-description: 帮用户温和但清楚地拒绝别人
+description: Help users decline requests warmly but clearly
 inputs:
-  - relationship       # 和对方的关系（朋友/同事/亲戚/陌生人）
-  - original_message   # 对方的请求内容
-  - desired_tone       # 期望的语气（gentle/firm/warm）
+  - relationship       # Relationship to the requester (friend/colleague/relative/stranger)
+  - original_message   # What the other person asked
+  - desired_tone       # Preferred tone (gentle/firm/warm)
 outputs:
-  - gentle             # 温和版：尽量不伤感情
-  - firm               # 坚定版：清楚边界，不含糊
-  - warm               # 高情商版：让对方感到被理解
-  - not_recommended    # 反面教材：避免这样说
+  - gentle             # Gentle: preserve the relationship as much as possible
+  - firm               # Firm: set a clear boundary without ambiguity
+  - warm               # Warm EQ: make them feel heard while still saying no
+  - not_recommended    # What NOT to say
 examples:
-  - input: "我不想借钱给他，但又不想撕破脸。"
+  - input: "A friend wants to borrow money but I don't want to lend it."
     outputs:
-      gentle: "我最近手头也有一些安排，可能没办法帮你周转。希望你能理解，不是针对你，只是我现在确实不太方便。"
-      firm: "这次我没办法借钱给你。我们关系归关系，但钱的事情我还是想保持清楚边界。"
-      warm: "我知道你现在可能挺着急的，但这件事我确实帮不上。要是你愿意，我可以帮你一起想想有没有别的解决办法。"
+      gentle: "I've got some things coming up financially myself right now, so I won't be able to help with that. I hope you understand — it's not about you, I'm just not in a position to."
+      firm: "I can't lend you money this time. Our relationship is separate from finances, and I prefer to keep it that way."
+      warm: "I can tell this is important to you, and I wish I could help. I can't lend money, but if you want, I'm happy to brainstorm other options together."

@@ -1,3 +1,3 @@
 # SayBetter Web
 
-Web 前端（待开发）。
+Web frontend for SayBetter. (Coming soon)

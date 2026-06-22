@@ -1,52 +1,53 @@
-# SayBetter / 好好说话
+# SayBetter
 
-一个开源的"高情商回复助手"：帮你把想说的话，改成更体面、更清楚、更不伤人的表达。
+An open-source "high EQ reply assistant" — helps you rephrase what you want to say into something more tactful, clearer, and less hurtful.
 
-## 为什么做这个？
+## Why?
 
-人人都有这样的场景：
+Everyone has been in these situations:
 
-- 不知道怎么拒绝别人
-- 不知道怎么催人
-- 不知道怎么跟领导沟通
-- 不知道怎么回相亲对象
-- 不知道怎么跟父母解释
-- 不知道怎么道歉
-- 不知道怎么表达边界
-- 不知道怎么把话说得坚定但不攻击
+- You don't know how to say no
+- You don't know how to follow up without being pushy
+- You don't know how to talk to your boss
+- You don't know how to reply to a blind date
+- You don't know how to explain things to your parents
+- You don't know how to apologize properly
+- You don't know how to set a boundary
+- You don't know how to be firm without being aggressive
 
-它的爆点在于：结果天然适合截图传播。
+The best part: the results are naturally shareable — perfect for screenshots on social media.
 
-## 示例
+## Example
 
-**输入：**
-> 我不想借钱给他，但又不想撕破脸。
+**Input:**
+> A friend wants to borrow money but I don't want to lend it.
 
-**输出：**
+**Output:**
 
-**温和版：**
-> 我最近手头也有一些安排，可能没办法帮你周转。希望你能理解，不是针对你，只是我现在确实不太方便。
+**Gentle:**
+> I've got some things coming up financially myself right now, so I won't be able to help with that. I hope you understand — it's not about you, I'm just not in a position to.
 
-**坚定版：**
-> 这次我没办法借钱给你。我们关系归关系，但钱的事情我还是想保持清楚边界。
+**Firm:**
+> I can't lend you money this time. Our relationship is separate from finances, and I prefer to keep it that way.
 
-**高情商版：**
-> 我知道你现在可能挺着急的，但这件事我确实帮不上。要是你愿意，我可以帮你一起想想有没有别的解决办法。
+**Warm EQ:**
+> I can tell this is important to you, and I wish I could help. I can't lend money, but if you want, I'm happy to brainstorm other options together.
 
-## 分享卡片
+## Share Cards
 
-生成"原话 vs 更好的说法"分享卡片，适合社交平台传播：
+Generate "Instead of → Try saying" cards, perfect for social media:
 
 ```
-原话：你怎么又拖到现在？
-换种说法：这个事情我们能不能今天定下来？我这边需要根据结果安排后续动作。
+Instead of: "Why are you so late again?"
+Try saying: "This is running behind schedule. Can we finalize it today? I need the outcome to plan next steps."
+— SayBetter
 ```
 
-## 项目结构
+## Project Structure
 
 ```
 saybetter/
-├── scenarios/          # 场景库（每个场景一个 YAML，可贡献 PR）
+├── scenarios/          # Scenario library — one YAML per scenario, open for PRs
 │   ├── rejection.yaml
 │   ├── apology.yaml
 │   ├── workplace.yaml
@@ -54,39 +55,58 @@ saybetter/
 │   ├── parents.yaml
 │   ├── money.yaml
 │   └── conflict.yaml
-├── prompts/            # 提示词模板
+├── prompts/            # System prompt templates
+│   ├── en/             # English (source of truth)
+│   ├── zh-CN/          # 简体中文
+│   ├── hi/             # हिन्दी
+│   ├── es/             # Español
+│   ├── fr/             # Français
+│   ├── ar/             # العربية
+│   ├── bn/             # বাংলা
+│   ├── pt/             # Português
+│   ├── ru/             # Русский
+│   └── id/             # Bahasa Indonesia
+├── translations/       # Translated scenario YAMLs
 │   ├── zh-CN/
-│   └── en-US/
-├── web/                # Web 前端
-└── extension/          # 浏览器扩展
+│   ├── hi/
+│   ├── es/
+│   ├── fr/
+│   ├── ar/
+│   ├── bn/
+│   ├── pt/
+│   ├── ru/
+│   └── id/
+├── web/                # Web frontend
+└── extension/          # Browser extension
 ```
 
-## 场景格式
+## Languages
 
-每个场景是一个 YAML 文件，方便社区贡献：
+SayBetter supports the world's top 10 most spoken languages:
 
-```yaml
-name: 拒绝请求
-description: 帮用户温和但清楚地拒绝别人
-inputs:
-  - relationship
-  - original_message
-  - desired_tone
-outputs:
-  - gentle
-  - firm
-  - warm
-  - not_recommended
-```
+| # | Language | Code |
+|---|----------|------|
+| 1 | English | `en` |
+| 2 | 简体中文 (Chinese) | `zh-CN` |
+| 3 | हिन्दी (Hindi) | `hi` |
+| 4 | Español (Spanish) | `es` |
+| 5 | Français (French) | `fr` |
+| 6 | العربية (Arabic) | `ar` |
+| 7 | বাংলা (Bengali) | `bn` |
+| 8 | Português (Portuguese) | `pt` |
+| 9 | Русский (Russian) | `ru` |
+| 10 | Bahasa Indonesia (Indonesian) | `id` |
 
-## 参与贡献
+English is the source of truth. All other languages are translations contributed by the community.
 
-欢迎提 PR：
+## How to Contribute
 
-- 新增场景（如何催甲方、如何拒绝亲戚借钱、如何提加薪、如何体面分手、如何回复阴阳怪气...）
-- 改进提示词
-- 优化 Web 界面
-- 开发浏览器扩展
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide. Quick start:
+
+- **New scenario** → add a YAML in `scenarios/` (English)
+- **Translate a scenario** → add a translated YAML in `translations/<lang>/`
+- **Translate a prompt** → add a `system.md` in `prompts/<lang>/`
+- **Build features** → work in `web/` or `extension/`
 
 ## License
 

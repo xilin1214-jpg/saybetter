@@ -1,12 +1,18 @@
-# 提示词模板
+# System Prompts
 
-按语言分目录存放系统提示词。
+Each language directory contains a `system.md` — the system prompt for SayBetter in that language.
 
-| 目录 | 语言 |
-|------|------|
-| zh-CN/ | 简体中文 |
-| en-US/ | 英文 |
+| Directory | Language | Status |
+|-----------|----------|--------|
+| en/ | English | Source of truth |
+| zh-CN/ | 简体中文 | Community reviewed |
+| hi/ | हिन्दी | Initial translation, needs review |
+| es/ | Español | Initial translation, needs review |
+| fr/ | Français | Initial translation, needs review |
+| ar/ | العربية | Initial translation, needs review |
+| bn/ | বাংলা | Initial translation, needs review |
+| pt/ | Português | Initial translation, needs review |
+| ru/ | Русский | Initial translation, needs review |
+| id/ | Bahasa Indonesia | Initial translation, needs review |
 
-## 如何贡献
-
-欢迎增加更多语言版本，或在现有语言中改进提示词质量。
+"Initial translation" means AI-generated and not yet reviewed by a native speaker. Contributions welcome!

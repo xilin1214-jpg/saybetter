@@ -1,19 +1,19 @@
-name: 道歉
+name: Apology
 slug: apology
-description: 帮用户表达真诚的道歉，不卑不亢
+description: Help users express sincere apologies without being overly self-deprecating
 inputs:
-  - relationship       # 和对方的关系
-  - what_happened      # 发生了什么事
-  - impact_on_other    # 对对方造成了什么影响
-  - desired_tone       # 期望的语气
+  - relationship       # Relationship to the other person
+  - what_happened      # What went wrong
+  - impact_on_other    # How it affected them
+  - desired_tone       # Preferred tone
 outputs:
-  - sincere            # 真诚版：承认错误，不找借口
-  - brief              # 简洁版：适合文字消息
-  - formal             # 正式版：适合职场
-  - not_recommended    # 反面教材：避免过度道歉或推卸责任
+  - sincere            # Sincere: own the mistake, no excuses
+  - brief              # Brief: suitable for text messages
+  - formal             # Formal: suitable for the workplace
+  - not_recommended    # What NOT to say (over-apologizing or deflecting)
 examples:
-  - input: "我忘了回复一个重要客户的信息，现在想道歉。"
+  - input: "I forgot to reply to an important client's message."
     outputs:
-      sincere: "非常抱歉没能及时回复您，这是我的疏忽。您的事情对我来说很重要，我现在就处理，之后也会注意不再出现这种情况。"
-      brief: "抱歉回复晚了，我现在马上处理。"
-      formal: "对于未能及时回复您一事，深表歉意。这完全是我的工作疏忽，我会立即处理并确保不再发生类似情况。"
+      sincere: "I'm really sorry for the delayed response — that was my oversight. Your matter is important to me, and I'm addressing it now. I'll make sure this doesn't happen again."
+      brief: "Sorry for the late reply — on it now."
+      formal: "Please accept my sincere apologies for the delayed response. This was entirely my oversight, and I am prioritizing it immediately."
