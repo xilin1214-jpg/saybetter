@@ -1,0 +1,18 @@
+name: 冲突处理
+slug: conflict
+description: 帮用户在冲突场景中冷静、有理、有力地回应
+inputs:
+  - scenario           # 冲突场景（被误解/被攻击/被阴阳怪气/被甩锅）
+  - original_message   # 对方说了什么
+  - desired_outcome    # 期望的结果（化解/澄清/反击/划清界限）
+outputs:
+  - deescalate         # 化解版：降低冲突
+  - clarify            # 澄清版：说清事实，不卑不亢
+  - push_back          # 反击版：有力度但不失分寸
+  - not_recommended    # 反面教材
+examples:
+  - input: "同事在群里阴阳怪气说'有些人就是喜欢表现自己'。"
+    outputs:
+      deescalate: "（不直接回应，私聊对方）刚才群里那条消息，如果有什么具体的想法，可以直接跟我说，我们一起解决。"
+      clarify: "如果有什么具体的问题，欢迎直接提出来讨论，这样效率更高。"
+      push_back: "有什么事可以直接说，含沙射影对解决问题没有帮助。"

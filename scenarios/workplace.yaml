@@ -1,0 +1,19 @@
+name: 职场沟通
+slug: workplace
+description: 帮用户在职场中专业、清晰地表达
+inputs:
+  - context            # 职场场景（汇报/催促/反馈/会议/邮件）
+  - original_message   # 想说的原话
+  - target_audience    # 对象（领导/同事/下属/客户）
+  - desired_tone       # 期望的语气
+outputs:
+  - professional       # 专业版：适合正式场合
+  - friendly           # 亲和版：适合日常同事沟通
+  - assertive          # 有力度版：需要推动事情时
+  - not_recommended    # 反面教材
+examples:
+  - input: "你怎么又拖到现在？"
+    outputs:
+      professional: "这个事情的进度比预期慢了一些，我们能不能今天定下来？我这边需要根据结果安排后续动作。"
+      friendly: "嗨，这个进展怎么样啦？我这边等着用，方便今天给到吗？"
+      assertive: "这个事情今天需要定下来。目前的延迟已经影响到后续安排，请确认今天可以完成。"
